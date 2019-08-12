@@ -1,0 +1,16 @@
+{
+  "name": "spinal-env-drive-appstore-btn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "spinal-env-drive-core": "git+https://github.com/spinalcom/spinal-env-drive-core.git"
+  }
+}
