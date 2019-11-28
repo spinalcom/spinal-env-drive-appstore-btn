@@ -1,4 +1,6 @@
-import { SpinalDrive_App } from "spinal-env-drive-core";
+import {
+  SpinalDrive_App
+} from "spinal-env-drive-core";
 var aesjs = require('aes-js');
 
 let spinalDrive_Env = window.spinalDrive_Env;
@@ -12,8 +14,9 @@ function cryptAes(k, path) {
 
 class SpinalOpenDashboard extends SpinalDrive_App {
   constructor() {
-    super("BAC : Building Application Center", "BAC : Building Application Center", "BAC : Building Application Center",
-      "appstore");
+    super("ST APPLIST", "Open ST APPLIST",
+      "ST_APPLIST",
+      "apps");
   }
 
   action(obj) {
@@ -27,7 +30,8 @@ class SpinalOpenDashboard extends SpinalDrive_App {
     path += "/" + obj.file.name;
     let myWindow = window.open("", "");
     const k = [10, 95, 124, 68, 55, 24, 90, 57, 34, 65, 81, 22, 75, 7, 110,
-      1];
+      1
+    ];
     let location = "/html/appstore/?path=" + cryptAes(k, path);
     myWindow.document.location = location;
     myWindow.focus();
