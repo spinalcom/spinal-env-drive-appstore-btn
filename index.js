@@ -14,7 +14,7 @@ function cryptAes(k, path) {
 
 class SpinalOpenDashboard extends SpinalDrive_App {
   constructor() {
-    super("ST APPLIST", "Open ST APPLIST",
+    super("ST_APPLIST", "ST App list",
       "ST_APPLIST",
       "apps");
   }
