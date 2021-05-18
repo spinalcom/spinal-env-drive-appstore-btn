@@ -1,3 +1,27 @@
+/*
+ * Copyright 2021 SpinalCom - www.spinalcom.com
+ * 
+ * This file is part of SpinalCore.
+ * 
+ * Please read all of the following terms and conditions
+ * of the Free Software license Agreement ("Agreement")
+ * carefully.
+ * 
+ * This Agreement is a legally binding contract between
+ * the Licensee (as defined below) and SpinalCom that
+ * sets forth the terms and conditions that govern your
+ * use of the Program. By installing and/or using the
+ * Program, you agree to abide by all the terms and
+ * conditions stated or referenced herein.
+ * 
+ * If you do not agree to abide by these terms and
+ * conditions, do not demonstrate your acceptance and do
+ * not install or use the Program.
+ * You should have received a copy of the license along
+ * with this file. If not, see
+ * <http://resources.spinalcom.com/licenses.pdf>.
+ */
+
 import {
   SpinalDrive_App
 } from "spinal-env-drive-core";
@@ -32,7 +56,7 @@ class SpinalOpenDashboard extends SpinalDrive_App {
     const k = [10, 95, 124, 68, 55, 24, 90, 57, 34, 65, 81, 22, 75, 7, 110,
       1
     ];
-    let location = "/html/appstore/?path=" + cryptAes(k, path);
+    let location = "/html/spinaltwin/?path=" + cryptAes(k, path);
     myWindow.document.location = location;
     myWindow.focus();
   }
